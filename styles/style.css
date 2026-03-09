@@ -7,10 +7,111 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--bg-color);
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23.4px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 .header {
-  height: 1vh;
+  height: 100vh;
   min-height: 668px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  padding: 0 10px;
+  color: aliceblue;
+  position: relative;
+}
+
+.header__decorated-text {
+  position: absolute;
+  top: 10px;
+  right: 19px;
+}
+
+.header__decorated-text::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: var(--bg-color-items);
+  border-radius: 50%;
+  margin-left: 10px;
+  box-shadow: 0 0 4px 2px var(--bg-color-items);
+}
+
+.decorated-zone::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  bottom: 10px;
+  left: 10px;
+  border-bottom: 1px solid var(--decorated-zone-color);
+  border-left: 1px solid var(--decorated-zone-color);
+  position: absolute;
+}
+
+.decorated-zone::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  right: 10px;
+  border-top: 1px solid var(--decorated-zone-color);
+  border-right: 1px solid var(--decorated-zone-color);
+  position: absolute;
+}
+
+.header__theme-menu {
+  margin-top: 75px;
+  align-items: center;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  line-height: 18px;
+  color: var(--button-color);
+  background-color: transparent;
+  border: none;
+  padding: 0 13px 2.5px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-color);
+}
+
+.header__title {
+  align-self: center;
+  justify-self: start;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 82.5%;
+  color: var(--title-color);
+}
+
+.header__description {
+  justify-self: start;
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  white-space: pre-line;
+  margin-bottom: 66px;
+}
+
+.title-decor {
+  color: #000028;
+  background-color: var(--bg-color-items);
+  font-weight: bold;
+}
+
+.advices__list-item__title {
+  font-weight: normal;
 }

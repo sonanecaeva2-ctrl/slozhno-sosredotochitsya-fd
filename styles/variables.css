@@ -5,4 +5,17 @@
 
 :root {
   --main-text-size: 18px;
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --decorated-zone-color: #ff0070;
+  --bg-color-items: #ff0070;
+  --text-decor-color: #000028;
+  --title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --button-color: #ff0070;
+  --section-subtitle-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --active-line-color: #ff0070;
+  --hover-line-color: rgb(255 0 112 / 0.4);
 }

@@ -10,20 +10,3 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
-
-/* темная */
-
-:root {
-  --bg-image: url(../images/cover-image-dark.png);
-  --bg-color: #000028;
-  --decorated-zone-color: #ff0070;
-  --bg-color-items: #ff0070;
-  --title-color: #db00ff;
-  --h2-color: #ff0070;
-  --button-color: #ff0070;
-  --h3-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --active-line-color: #ff0070;
-  --hover-line-color: rgb(255 0 112 / 0.4);
-}

@@ -11,6 +11,8 @@
   */
 }
 
+/* темная */
+
 :root {
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
@@ -21,7 +23,7 @@
   --button-color: #ff0070;
   --h3-color: #000028;
   --text-color: #f1b2ce;
-  --accent-color: #ff0070; /*поменять*/
+  --accent-color: #ff0070;
   --active-line-color: #ff0070;
   --hover-line-color: rgb(255 0 112 / 0.4);
 }

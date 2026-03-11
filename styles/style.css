@@ -11,11 +11,11 @@
   font-weight: normal;
   font-size: var(--main-text-size);
   line-height: 23.4px;
-  /*padding: 0 10px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 .header {
+  padding: 0 10px;
   height: 100vh;
   min-height: 668px;
   display: grid;
@@ -30,7 +30,7 @@
   width: 25px;
   height: 25px;
   bottom: 10px;
-  left: 0;
+  left: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
   position: absolute;
@@ -42,7 +42,7 @@
   width: 25px;
   height: 25px;
   top: 10px;
-  right: 0;
+  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   position: absolute;
@@ -106,6 +106,10 @@
   align-self: end;
   font-size: var(--main-text-size);
   white-space: pre-line;
+}
+
+.content__section {
+  padding: 0 10px;
 }
 
 .content__section-title {
@@ -182,6 +186,7 @@
 }
 
 .footer {
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,7 +215,7 @@
   width: 25px;
   height: 25px;
   bottom: 10px;
-  left: 0px;
+  left: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
   position: absolute;
@@ -222,31 +227,26 @@
   width: 25px;
   height: 25px;
   top: 10px;
-  right: 0px;
+  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   position: absolute;
 }
 
 @media (width >= 768px) {
-  /*.page {
-    padding: 0 var(--padding);
-  }*/
 
   .header {
     min-height: 1024px;
+    padding: 0 var(--padding);
   }
 
   .header.decorated-zone::before {
     top: 20px;
+    right: 20px;
   }
 
   .header.decorated-zone::after {
-    bottom: 20px;
-  }
-
-  .header__theme-menu {
-
+    bottom: 10px;
   }
 
   .header__title {
@@ -264,6 +264,7 @@
   }
 
   .content__section {
+    padding: 0 var(--padding);
     display: grid;
     grid-template-columns: minmax(236px, min-content) 1fr;
     grid-template-rows: min-content 1fr;
@@ -358,10 +359,12 @@
 
   .footer.decorated-zone::before {
     top: 20px;
+    right: 20px;
   }
 
   .footer.decorated-zone::after {
     bottom: 20px;
+    left: 20px;
   }
 }
 
@@ -376,6 +379,7 @@
 
   .header.decorated-zone::after {
     bottom: 20px;
+    left: 20px;
   }
 
   .header__theme-menu {
@@ -393,7 +397,6 @@
   .header__title {
     font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
     align-self: start;
-    margin-left: -20px;
   }
 
   .title-decor.header__description {
@@ -441,13 +444,5 @@
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
-  .footer.decorated-zone::before {
-    top: 20px;
-  }
-
-  .footer.decorated-zone::after {
-    bottom: 20px;
   }
 }

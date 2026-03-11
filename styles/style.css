@@ -130,9 +130,6 @@
   font-weight: bold;
   color: var(--text-on-accent);
   font-size: var(--main-text-size);
-}
-
-.title-decor {
   margin-bottom: 10px;
 }
 
@@ -308,6 +305,7 @@
     align-self: start;
     grid-column-start: 1;
     grid-column-end: 3;
+    margin-bottom: var(--margin);
   }
 
   .list-images:last-child {
@@ -348,10 +346,6 @@
   .list-images__item-street {
     grid-column: 2 / 4;
     grid-row: 4 / 5;
-  }
-
-  .content__section-title__images {
-    margin-bottom: var(--margin);
   }
 
   .footer {

@@ -11,7 +11,7 @@
   font-weight: normal;
   font-size: var(--main-text-size);
   line-height: 23.4px;
-  padding: 0 10px;
+  /*padding: 0 10px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 

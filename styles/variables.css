@@ -15,4 +15,6 @@
   --bg-image: url(../images/cover-image-dark.png);
   --text-on-accent: #000028;
   --hover-color: rgb(255 0 112 / 0.4);
+  --decorated-zone-color: #ff0070;
+  --button-color: #ff0070;
 }

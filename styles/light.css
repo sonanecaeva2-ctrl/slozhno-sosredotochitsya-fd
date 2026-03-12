@@ -21,10 +21,6 @@
     display: none;
   }
 
-.theme-light .header__decorated-text::after {
-    display: none;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
   --bg-color: #fff1f7;
@@ -39,11 +35,7 @@
   --button-color: #353430;
   }
 
-  .header__decorated-text {
-      display: none;
-  }
-
-  .header__decorated-text::after {
-      display: none;
+  :root:not(.theme-dark) .header__decorated-text {
+    display: none;
   }
 }
